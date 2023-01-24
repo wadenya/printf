@@ -112,6 +112,7 @@ int print_int(va_list types, char buffer[],
 	int is_negative = 0;
 	long int n = va_arg(types, long int);
 	unsigned long int num;
+	/*int y;*/
 
 	n = convert_size_number(n, size);
 
@@ -131,7 +132,7 @@ int print_int(va_list types, char buffer[],
 		buffer[i--] = (num % 10) + '0';
 		num /= 10;
 	}
-	y++;
+	/*y++;*/
 	return (write_number(is_negative, i, buffer, flags, width, precision, size));
 }
 

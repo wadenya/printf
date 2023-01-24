@@ -111,4 +111,16 @@ int is_digit(char);
 long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
 
+
+/******printfs*********/
+int printf_char(va_list val);
+int printf_bin(va_list val);
+int printf_srev(va_list args);
+int printf_rot13(va_list args);
+int _strlenc(const char *s);
+int _strlen(char *s);
+int printf_unsigned(va_list args);
+int printf_HEX(va_list val);
+int printf_HEX_aux(unsigned int num);
+int _putchar(char c);
 #endif /* MAIN_H */
